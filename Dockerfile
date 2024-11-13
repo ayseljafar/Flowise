@@ -24,6 +24,7 @@ WORKDIR /usr/src
 
 # Copy app source
 COPY . .
+VOLUME /usr/src/database
 
 RUN pnpm install
 
